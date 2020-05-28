@@ -1,4 +1,4 @@
-package com.cordovagabriela.salessystem.controllers;
+package com.cordovagabriela.system.controllers;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.cordovagabriela.salessystem.entity.Client;
+import com.cordovagabriela.system.entity.Client;
 
 @RestController
 @RequestMapping(value="/users")
