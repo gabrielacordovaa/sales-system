@@ -15,7 +15,7 @@ import com.cordovagabriela.system.entity.Client;
 
 @RestController
 @RequestMapping(value="/users")
-public class UserController {
+public class ClientController {
 	
 	@GetMapping
 	public ResponseEntity<List<Client>> findAll() throws ParseException {
