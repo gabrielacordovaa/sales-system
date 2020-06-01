@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="238.0" prefWidth="344.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.MainViewController">
+   <top>
+      <ButtonBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <buttons>
+          <Button fx:id="btLogin" mnemonicParsing="false" onAction="#onBtLoginAction" text="LOGIN">
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="btProducts" mnemonicParsing="false" onAction="#onBtProductsAction" prefHeight="26.0" prefWidth="98.0" text="PRODUCTS">
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="btHelp" mnemonicParsing="false" onAction="#onBtHelpAction" text="HELP">
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font>
+            </Button>
+        </buttons>
+         <padding>
+            <Insets right="20.0" />
+         </padding>
+      </ButtonBar>
+   </top>
+</BorderPane>

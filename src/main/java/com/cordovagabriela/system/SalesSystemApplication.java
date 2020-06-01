@@ -15,6 +15,8 @@ public class SalesSystemApplication extends Application {
 
 	protected ConfigurableApplicationContext springContext;
 
+	private static Scene mainScene;
+	
 	public static void main(String[] args) {
 		// SpringApplication.run(SalesSystemApplication.class, args);
 		Application.launch(args);
@@ -23,14 +25,22 @@ public class SalesSystemApplication extends Application {
 	@Override
 	public void start(Stage stage) throws Exception {
 		try {
-			Parent parent = FXMLLoader.load(getClass().getResource("/gui/Login.fxml"));
-			Scene scene = new Scene(parent);
-			stage.setScene(scene);
+			FXMLLoader loader = new FXMLLoader(getClass().getResource("/gui/MainView.fxml"));
+			Parent parent = loader.load();
+			parent.setStyle("-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #9400d3, #8a2be2)");
+			Scene mainScene = new Scene(parent);
+			
+			stage.setScene(mainScene);
+			stage.setTitle("SALES SYSTEM ");
 			stage.show();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 
+	}
+	
+	public static Scene getMainScene() {
+		return mainScene;
 	}
 
 	@Override

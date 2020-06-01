@@ -8,4 +8,5 @@ import com.cordovagabriela.system.entity.Client;
 @Repository
 public interface ClientRepository extends JpaRepository<Client, String>{
 
+	Client findByEmail(String email);
 }
